@@ -10,6 +10,7 @@ import saleRoutes from "./routes/salesRoutes.js";
 
 
 
+
 dotenv.config();
 
 const app = express();

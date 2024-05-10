@@ -21,7 +21,7 @@ export const calculateSalesAndCash = async (req, res) => {
 export const saveSalesAndCash = async (req, res) => {
   try {
     const { userId, sales, cash, date } = req.body;
-    console.log(req.body);
+   
    
     const newSale = new Sales({
       userId,

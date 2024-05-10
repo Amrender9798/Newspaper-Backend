@@ -40,9 +40,7 @@ export const getPurchaseByDate = async (req, res) => {
     const { userId, date } = req.query; 
     
     const user = await Customer.findById(userId);
-    console.log('------Disco Dancer--------');
-    console.log(user);
-    console.log(userId,user._id,date);
+   
 
     
     
@@ -53,7 +51,7 @@ export const getPurchaseByDate = async (req, res) => {
     });
 
 
-    console.log("Purchases:", purchases);
+   
 
     res.json(purchases);
   } catch (error) {

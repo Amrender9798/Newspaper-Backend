@@ -2,8 +2,9 @@ import Customer from '../models/customerModel.js';
 
 export async function createCustomer(req, res) {
   try {
-    const { name, balance } = req.body;
-    const customer = new Customer({ name, balance });
+    const { name } = req.body;
+    
+    const customer = new Customer({ name });
     await customer.save();
     res.json(customer);
   } catch (error) {
